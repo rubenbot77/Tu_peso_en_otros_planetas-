@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu peso en diferentes planetas</title>
+</head>
+<body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en otros planetas</p>
+    <script>
+        var user = prompt("¿Cuál es tú peso?");
+        var weight = parseInt (user);
+        var g_earth = 9.8;
+        var g_mars = 3.7;
+        var g_mercury = 3.7;
+        var g_uranus = 8.8;
+        var g_venus = 8.8;
+        var g_neptune = 11.1
+        var g_jupiter = 24.7;
+        var g_saturn = 10.4;
+        var peso_final;
+          final_weight = weight * g_mars / g_earth;
+          final_weight = parseInt(final_weight);
+        document.write("Tú peso en marte es <strong>" + final_weight + " kg</strong>");
+    </script>
+</body>
+</html>
