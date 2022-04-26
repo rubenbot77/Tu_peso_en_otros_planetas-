@@ -9,64 +9,10 @@
 <body>
     <h1>Tu peso en otro planeta</h1>
     <p>En la tierra pesas distinto que en otros planetas</p>
-    <script>
-        var user = prompt("¿Cuál es tú peso?");
-        var planet = parseInt(prompt
-        ("Elige un planeta:\n1 es Mercurio\n2 es Venus\n3 es Tierra\n4 es Marte\n5 es Jupiter\n6 es Saturno\n7 es Urano\n8 es Neptuno."));
-        var weight = parseInt (user);
-        var g_earth = 9.8;
-        var g_mars = 3.7;
-        var g_mercury = 3.7;
-        var g_uranus = 8.8;
-        var g_venus = 8.8;
-        var g_neptune = 11.1
-        var g_jupiter = 24.7;
-        var g_saturn = 10.4;
-        var final_weight;
-        var name;
-        var error;
-        if(planet == 1)
-        {
-            final_weight = weight * g_mercury / g_earth;
-            name = "Mercurio";
-        }
-        if(planet == 2)
-        {
-            final_weight = weight *g_venus / g_earth;
-            name = "Venus";
-        }
-        if(planet == 3)
-        {
-            final_weight = weight *g_earth / g_earth;
-            name = "Tierra";
-        }
-        if(planet == 4)
-        {
-            final_weight = weight *g_mars / g_earth;
-            name = "Marte";
-        }
-         if(planet == 5)
-        {
-            final_weight = weight *g_jupiter / g_earth;
-            name = "Jupiter";
-        }
-        if(planet == 6)
-        {
-            final_weight = weight *g_saturn / g_earth;
-            name = "Saturno";
-        }
-        if(planet == 7)
-        {
-            final_weight = weight *g_uranus / g_earth;
-            name= "Urano";
-        }
-        if(planet == 8)
-        {
-            final_weight = weight *g_neptune / g_earth;
-            name = "Neptune";
-        }
-        final_weight = parseInt(final_weight);
-        document.write("Tú peso en "+ name +" es <strong>" + final_weight + " kg</strong>");
-    </script>
+    <p>¡Dinos tu peso!
+    <input type="text" id="peso_del_usuario"/>
+    <input type="button" value="Dale click" id="boton"/>
+    </p>
+    <script src="codigo.js"></script>
 </body>
 </html>
