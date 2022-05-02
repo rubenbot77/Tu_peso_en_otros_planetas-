@@ -18,5 +18,5 @@
         {
             var box = parseInt(caja.value);
             var g_mars = 3.7;
-            document.write("tu peso en marte es " + (box * g_mars / 9.8));
+            document.write("tu peso en marte es  " ,  + (box * g_mars / 9.8));
         }
